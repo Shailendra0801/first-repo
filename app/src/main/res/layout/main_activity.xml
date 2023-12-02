@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/head"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textAllCaps="false"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/teal_700"
+                />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/fName"
+                    android:layout_width="235dp"
+                    android:layout_height="60dp"
+                    android:textFontWeight="1"
+                    android:layout_marginStart="10dp"
+                    android:hint="First name"
+                    android:inputType="text"
+                    />
+
+                <EditText
+                    android:id="@+id/lName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:layout_toRightOf="@+id/fName"
+                    />
+
+                <EditText
+                    android:id="@+id/bDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Birth Date"
+                    android:inputType="date"
+                    android:layout_below="@+id/fName"
+                    />
+
+                <EditText
+                    android:id="@+id/country"
+                    android:layout_width="255dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/bDate"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:hint="Country"
+                    android:inputType="text"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Apply"
+                    android:layout_below="@+id/bDate"
+                    android:layout_toRightOf="@+id/country"
+                    />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="Anything"
+                        android:inputType="text"
+                        />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Click Me"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>
